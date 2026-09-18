@@ -18,20 +18,20 @@ def dem2():
 
     th.manual_seed(3)  # 手动设置随机种子，每次运行结果都相同
 
-    t1 = th.rand(size=(2, 3))  # 创建一个2*3的随机张量，元素在0-1之间
+    t1 = th.rand(size=(2, 3))  # 创建一个2*3的随机张量，元素在0-1之间 均匀分布
     print(t1)
     print(f'-' * 30)
 
 
 def dem3():
-    t1 = th.randn(size=(2, 3))  # 创建一个2*3的随机张量，元素服从标准正态分布
+    t1 = th.randn(size=(2, 3))  # 创建一个2*3的随机张量，元素服从标准正态分布 正态分布的均值为0，标准差为1
     print(f't1:{t1},type:{type(t1)}')
     print(f'-' * 30)
 
 
 def dem4():
     th.manual_seed(3)
-    t1 = th.randint(low=0, high=10, size=(2, 3))  # 创建一个2*3的随机整量，元素在0-9之间
+    t1 = th.randint(low=0, high=10, size=(2, 3))  # 创建一个2*3的随机整量，元素在0-9之间 指定范围的整数
     print(f't1:{t1},type:{type(t1)}')
     print(f'-' * 30)
 
