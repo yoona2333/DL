@@ -46,7 +46,7 @@ def dem3():
     t1=th.tensor(100.3)
     # t2=th.tensor(200,) 这种可以理解为标量
 
-    t3=th.tensor(200,300)
+    t3=th.tensor(200,dtype=th.float32)
     print(f't1:{t1},type:{type(t1)}')
     a=t3.item()
     print(f'a:{a},type:{type(a)}')
