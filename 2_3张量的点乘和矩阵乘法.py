@@ -1,4 +1,3 @@
-from filecmp import demo
 
 import numpy as np
 import torch as th
