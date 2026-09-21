@@ -15,7 +15,7 @@ def dm01():
 	print(id(x1.data))
 	print(id(x2.data))
 	# 自动微分张量转换成numpy数组
-	n1 = x2.numpy()
+	n1 = x2.numpy()      
 	print('n1->', n1)
 
 	#最终形式转换nump
